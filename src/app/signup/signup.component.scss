@@ -27,8 +27,11 @@ a:hover {
 .panel {
     margin-top: 10%;
     min-height: 300px;
-    box-shadow: 20px 20px 80px rgb(195, 195, 195);
     border-radius: 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: rgb(40, 40, 40);
+    border: 2px solid #107d7d;
 } 
 
 .input-field {
@@ -51,9 +54,4 @@ input[type='password']{
     outline: none;
     box-shadow: none;
     width: 100%;
-    margin-left: 7px;
-    margin-right: 7px;
-    border-radius: 7px;
-    padding: 5px 2px;
-    margin-right: 15px;
 }

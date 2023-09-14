@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
-                <div class="panel border bg-white">
+                <div class="panel">
                     <div class="panel-heading">
                         <h3 class="pt-4 font-weight-bold">Login</h3>
                     </div>
@@ -30,10 +30,11 @@
                             <div class="form-inline fr mt-4">
                                 <a class="forget font-weight-bold">Forget Password?</a>
                             </div>
-                            <button (click)="onSubmit()" [disabled]="loginForm.invalid" type="submit" class="btn btn-green btn-block mt-4 w-100">Login</button>
+                            <button (click)="onSubmit()" type="submit" class="btn btn-green btn-block mt-4 w-100">Login</button>
                         
+                            <!-- <button (click)="onSubmit()" [disabled]="loginForm.invalid" type="submit" class="btn btn-green btn-block mt-4 w-100">Login</button> -->
                             <div class="text-center pt-4 text-muted">
-                                <p>Don't have an account? <a class="forget" routerLink="/signup">Sign Up</a></p>
+                                <p class="text-white">Don't have an account? <a class="forget" routerLink="/signup">Sign Up</a></p>
                             </div>
                         </form>
                     </div>
