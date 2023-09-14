@@ -39,6 +39,19 @@ export class SignupComponent implements OnInit{
     })
   }
 
+  onSignup(): void {
+    if(this.signupForm.valid) {
+      //Send the objcet to the database
+
+      console.log(this.signupForm.value)
+    } else {
+      console.log('Form is not valid')
+      //throw the error
+      this.validateAllFormFields(this.signupForm);
+      alert('Your form is invalid!');
+    }
+  }
+
   private validateAllFormFields(formGroup: FormGroup): void {
     Object.keys(formGroup.controls).forEach(field => {
       const control = formGroup.get(field);
